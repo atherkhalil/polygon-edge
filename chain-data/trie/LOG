@@ -1,0 +1,8 @@
+=============== May 18, 2023 (+04) ===============
+17:00:21.800694 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:00:21.807539 db@open opening
+17:00:21.807681 version@stat F·[] S·0B[] Sc·[]
+17:00:21.808976 db@janitor F·2 G·0
+17:00:21.809001 db@open done T·1.440327ms
+17:10:37.531472 db@close closing
+17:10:37.531511 db@close done T·37.746µs

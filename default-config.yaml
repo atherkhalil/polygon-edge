@@ -1,0 +1,32 @@
+chain_config: ./genesis.json
+secrets_config: ""
+data_dir: ""
+block_gas_target: "0x0"
+grpc_addr: ""
+jsonrpc_addr: ""
+telemetry:
+    prometheus_addr: ""
+network:
+    no_discover: false
+    libp2p_addr: 127.0.0.1:1478
+    nat_addr: ""
+    dns_addr: ""
+    max_peers: -1
+    max_outbound_peers: -1
+    max_inbound_peers: -1
+seal: true
+tx_pool:
+    price_limit: 0
+    max_slots: 4096
+    max_account_enqueued: 128
+log_level: INFO
+restore_file: ""
+headers:
+    access_control_allow_origins:
+        - '*'
+log_to: ""
+json_rpc_batch_request_limit: 20
+json_rpc_block_range_limit: 1000
+json_log_format: false
+relayer: false
+num_block_confirmations: 64
