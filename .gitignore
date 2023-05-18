@@ -31,3 +31,4 @@ node_modules
 
 vendor/
 coverage.out
+chain-data
