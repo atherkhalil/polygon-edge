@@ -11,9 +11,9 @@ make
 make build
 ```
 
-## Create A Vault
+## Create A Key Vault
 
-The following is a docker-compose file used to create a docker container for the vault (Hashicorp). The vault is exposed on `http://127.0.0.1:8200`.
+The following is a docker-compose file used to create a docker container for the Key Vault (Hashicorp) to store node secrets. The vault is exposed on `http://127.0.0.1:8200`.
 
 ```bash
 version: '3'
@@ -30,7 +30,7 @@ services:
 
 ## Create Secrets
 
-Now that the vault is accessible, we'll supply the url & token to the "init" command to store the secrets in the vault after creation.
+Now that the Key Vault is accessible, we'll supply the url & token to the "init" command to store the secrets in it after creation.
 
 ```bash
 ./polygon-edge secrets generate --name secretMan --token my-token --server-url http://127.0.0.1:8200
@@ -40,7 +40,7 @@ Now that the vault is accessible, we'll supply the url & token to the "init" com
 ./polygon-edge secrets init --config ./secretsManagerConfig.json
 ```
 
-#### The above commands will store the secrets in the specified vault and print the following.
+#### The above commands will store the secrets in the specified Key Vault and print the following.
 
 ```bash
 [SECRETS INIT]
