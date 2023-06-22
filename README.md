@@ -7,7 +7,6 @@ This document lists out the commands used for deploying a production grade Polyg
 ```bash
 git clone https://github.com/0xPolygon/polygon-edge.git
 
-make
 make build
 ```
 
